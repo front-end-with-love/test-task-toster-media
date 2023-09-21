@@ -1,0 +1,79 @@
+.cover
+  background: $color-yellow-primary
+  &__container
+    @include glass(100%, 16px)
+    display: flex
+    justify-content: center
+    align-items: center
+    &--indents-none
+      @include glass(100%,0)
+  &__logo
+    @include icon-logo
+    margin: 19px 0
+  &__time
+    min-height: 58px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 8px 8px 6px 8px
+    position: absolute
+    left: 14px
+    bottom: 14px
+    border-radius: 8px
+    background: $color-orange-primary
+    min-width: 114px
+    will-change: width
+    transition: width 0.5s ease-in-out
+    span
+      display: flex
+      &:first-child
+        font: 700 10.599px/1.2 $font-gotham-pro
+        color: $color-white-primary
+        text-transform: uppercase
+        margin: 0 0 6px
+  &__timer
+    font: 700 21.254px/1.2 $font-gotham-pro
+    color: $color-white-primary
+    text-transform: uppercase
+    white-space: nowrap
+    will-change: width
+    transition: width 0.5s ease-in-out
+  &__price
+    min-height: 58px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5px 8px 3px 8px
+    position: absolute
+    right: 14px
+    bottom: 14px
+    border-radius: 6px
+    background: $color-green-primary
+    span
+      display: flex
+      &:first-child
+        font: 700 18.077px/1.2 $font-gotham-pro
+        color: $color-white-primary
+        text-transform: uppercase
+        margin: 0 0 2px
+        position: relative
+        &:after
+          content: ''
+          display: block
+          background: $color-orange-secondary
+          width: calc(100% + 4px)
+          height: 3.5px
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translate3d(-2px,calc(-50% - 1px),0)
+      &:last-child
+        font: 700 22.301px/1.2 $font-gotham-pro
+        color: $color-white-primary
+        text-transform: uppercase
+  img
+    display: block
+    width: 100%
+    height: auto

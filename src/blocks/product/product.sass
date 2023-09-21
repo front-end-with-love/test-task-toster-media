@@ -1,0 +1,133 @@
+.product
+  padding: 12px 0 40px
+  background: $color-white-secondary
+  &__container
+    @include glass(100%, 16px)
+  &__row
+    margin: 0 0 20px
+    &--space-between
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &--select
+      display: grid
+      grid-template-columns: 1fr 1fr
+      column-gap: 16px
+    &:last-child
+      margin-bottom: 0
+  &__text
+    font: 400 15.29px/1.2 $font-gotham-pro
+    color: $color-black-primary
+    margin: 0 0 12px
+    &--small
+      font: 400 12.067px/1.2 $font-gotham-pro
+      color: $color-black-secondary
+    &--selected
+      font: 400 12.067px/1.2 $font-gotham-pro
+      color: $color-green-primary
+      text-decoration-line: underline
+    &:last-child
+      margin-bottom: 0
+  //&__logo
+  h1
+    font: 700 19.168px/1.2 $font-gotham-pro
+    color: $color-black-secondary
+    text-transform: uppercase
+  //&__slider
+  //  &.swiper-container
+  //.swiper-wrapper
+  //&__slide
+  //  &.swiper-slide
+  &__slider-img
+    display: block
+    width: 100%
+    height: auto
+    border-radius: 20px
+  //&__preview-list
+  &__preview-item
+    cursor: pointer
+  &__preview-item-img
+    display: block
+    width: 100%
+    height: auto
+    border-radius: 10px
+    will-change: opacity
+    transition: opacity 0.4s ease
+    &:hover,
+    .swiper-slide-thumb-active &
+      opacity: 0.4
+  &__text-bold
+    font: 700 15.29px/1.2 $font-gotham-pro
+    color: $color-black-primary
+    margin: 0 4px 0 0
+  &__rating
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    column-gap: 4px
+  &__rating-item
+    @include icon-star
+    &--active
+      @include icon-star-filled
+  &__rating-text
+    font: 400 15.29px/1.2 $font-gotham-pro
+    color: $color-black-secondary
+    margin: 0 0 0 6px
+    display: flex
+    transform: translate3d(0,2px,0)
+  &__select-wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__select-label
+    display: flex
+    margin: 0 0 4px
+    font: 400 10px/1.2 $font-gotham-pro
+    color: $color-black-secondary
+  &__select-inner-wrapper
+    background: $color-white-primary
+    box-shadow: 0 4px 7px 0 rgba($color-black-primary,0.02)
+    border-radius: 58px
+    width: 100%
+  &__select-caret
+    position: absolute
+    top: 37px
+    right: 20px
+    @include icon-arrow-bottom
+    transform-origin: center center
+    will-change: transform
+    transition: transform 0.24s ease-in-out
+    z-index: 1
+  &__select
+    width: 100%
+    appearance: none
+    background: transparent
+    box-shadow: none
+    border-radius: 58px
+    border: none
+    font: 700 21.69px/1 $font-gotham-pro
+    color: $color-black-secondary
+    text-transform: uppercase
+    padding: 15.5px 30px 13.5px 30px
+    text-align: center
+    position: relative
+    z-index: 2
+    &:focus
+      outline: none
+      & + .product__select-caret
+        transform: rotate(180deg)
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    text-decoration: none
+    font: 400 30px/1 $font-gotham-pro
+    color: $color-white-primary
+    text-transform: uppercase
+    border-radius: 15px
+    background: $color-green-primary
+    padding: 12px 20px 8px
+    @include hover

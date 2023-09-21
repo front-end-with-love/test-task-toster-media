@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  height: 100%
+  position: relative
+  margin: 0
+  padding: 0
+  scroll-behavior: smooth
+body
+  margin: 0
+  padding: 0
+  position: relative
+  width: 100%
+  min-height: 100%
+  background-color: $color-white-primary
+  scroll-behavior: smooth
+  overflow-x: hidden
+  @include breakpoint($mobile-max-360)
+    overflow-x: scroll

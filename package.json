@@ -1,0 +1,35 @@
+{
+    "name": "Тестовое задание Front-end разработчик Toster Media",
+    "version": "1.0",
+    "description": "UI/UX Layout",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Michail Khlebnikov",
+    "license": "ISC",
+    "devDependencies": {
+        "breakpoint-sass": "^3.0.0",
+        "browser-sync": "^2.29.3",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-load-plugins": "^2.0.8",
+        "gulp-notify": "^4.0.0",
+        "gulp-pug": "^5.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-webp": "^4.0.1",
+        "load": "^1.0.2",
+        "sass": "^1.63.6",
+        "gulp-postcss": "^9.0.1",
+        "gulp-rename": "^2.0.0",
+        "postcss-merge-rules": "^6.0.1",
+        "postcss-combine-duplicated-selectors": "^10.0.3",
+        "postcss-sort-media-queries": "^5.2.0",
+        "postcss-discard-comments": "^6.0.0"
+    }
+}

@@ -1,0 +1,17 @@
+// Import fonts
+// Gotham Pro
+// Regular - 400
+// Bold - 700
+
+@include font-face(GothamPro, "../fonts/Gotham-Pro/GothamPro_400", 400, normal, woff2 woff)
+@include font-face(GothamPro, "../fonts/Gotham-Pro/GothamPro_700", 700, normal, woff2 woff)
+html
+  -webkit-font-smoothing: antialiased
+body
+  font: 400 15.29px/1.2 $font-gotham-pro
+  color: $color-black-primary
+  text-rendering: optimizeLegibility
+  font-feature-settings: 'tnum' on, 'lnum' on
+  -webkit-text-size-adjust: none
+  -webkit-font-smoothing: antialiased
+  @include selectionText
